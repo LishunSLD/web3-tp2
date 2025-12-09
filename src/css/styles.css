@@ -4,9 +4,15 @@
   --bs-success-rgb: 9, 255, 0;
 }
 
+ @font-face {
+    font-family: 'digital';
+     src: url('../../assets/font/digital-7.ttf'),
+}
+
 body {
     height: 100vh;
     width: 100vw;
+    font-family: 'digital';
 
     display: flex;
     align-items: center;
