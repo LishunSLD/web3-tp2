@@ -47,7 +47,7 @@ const chart2 = new Chart(document.querySelector("#chart2"), {
 let chart = new Chart(document.querySelector("#chart1"), {
     type: "polarArea",
     data: {
-        labels: ["16–24", "25–34", "35–44", "45–54", "55–64", "65+"],
+        labels: ["Followers: 264k", "Followers: 264k", "Followers: 264k", "Followers: 264k", "Followers: 264k", "Followers: 264k"],
         datasets: [
             {
                 data: [19, 21, 17, 15, 4, 3],
