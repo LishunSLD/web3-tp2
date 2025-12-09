@@ -23,9 +23,9 @@ body {
         "a a e f f f c c c d d"
         "q q q f f f c c c w w"
         "r r r f f f c c c w w"
-        "t t t y y y c c c u u"
+        "t t t y y y c c c s s"
+        "t t t i i i i o o u u"
         "t t t i i i i o o p p"
-        "t t t i i i i o o s s"
         "t t t i i i i o o g g";
     gap: 0.3rem;
 }
@@ -33,8 +33,55 @@ body {
 .pfp img {
     width: 65%;
     margin: auto auto;
-    filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(90deg) saturate(1000%);
 }
+
+#carte canvas {
+  width: 90vmin;
+  height: 90vmin;
+}
+
+.zdog-canvas {
+  width: 100%;
+  z-index: 1000;
+  margin: auto auto;
+}
+
+.balle {
+    width: 50%;
+    height: 50%;
+    container-type: size;
+}
+
+.balles {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #09ff00;
+    z-index: -1
+}
+
+.balleCcontainer2 {
+    transform: translateY(-100%);
+}
+
+.progressa {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
+    filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(90deg) saturate(1000%);
+} */
+
+#colorSelect {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    padding-right: 0;
+}
+
 
 .a {
     grid-area: a;
@@ -98,6 +145,7 @@ body {
 
 .w {
     grid-area: w;
+    z-index: 0;
 }
 
 .u {

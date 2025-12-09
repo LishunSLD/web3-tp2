@@ -2,48 +2,156 @@
 <html data-bs-theme="dark" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TGPV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGPV</title>
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
 
-    <script type="importmap">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.13.0/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <script type="importmap">
         {
-        "imports": {            
-            "animejs": "./node_modules/animejs/dist/bundles/anime.esm.min.js",
-            "chart.js": "./node_modules/chart.js/dist/chart.umd.min.js",
-            "@kurkle/color": "./node_modules/@kurkle/color/dist/color.min.js"
+            "imports": {            
+                "animejs": "./node_modules/animejs/dist/modules/index.js",
+                "chart.js": "./node_modules/chart.js/dist/chart.js",
+                "@kurkle/color": "./node_modules/@kurkle/color/dist/color.esm.js",
+                "maplibre-gl": "https://esm.sh/maplibre-gl@5.13.0",
+                "tone.js": "https://esm.sh/tone@15.1.22",
+                "zzz": "https://esm.sh/zdog",
+                "vfx-js": "https://esm.sh/@vfx-js/core"
+            }
         }
-    }
     </script>
-    <script type="module" src="./src/js/script.js"></script>
+
+  <script type="module" src="./src/js/zdog.js" defer></script>
+  <script type="module" src="./src/js/chart.js" defer></script>
+  <script type="module" src="./src/js/map.js" defer></script>
+  <script type="module" src="./src/js/anime.js" defer></script>
+  <script type="module" src="./src/js/vfx.js" defer></script>
+  <script type="module" src="./src/js/misc.js" defer></script>
+  <script type="module" src="./src/js/tone.js" defer></script>
 </head>
 
 <body class="bg-black">
-    <div class="grid-container bg-black">
-        <div class="pfp a bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">A</div>
-        <div class="b bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">B</div>
-        <div class="c bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">C</div>
-        <div class="d bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">D</div>
-        <div class="e bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">E</div>
-        <div class="f bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">F</div>
-        <div class="q bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">Q</div>
-        <div class="r bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">R</div>
-        <div class="t bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">T</div>
-        <div class="y bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">Y</div>
-        <div class="i bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">I</div>
-        <div class="o bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">O</div>
-        <div class="p bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">P</div>
-        <div class="s bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">S</div>
-        <div class="g bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">G</div>
-        <div class="w bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">W</div>
-        <div class="u bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">U</div>
+  <div class="grid-container bg-black">
+    <div
+      class="pfp a bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <img src="./assets/img/pfp.jpg" class="img-fluid">
     </div>
+    <div class="b bg-black border border-success text-success rounded d-grid align-items-center ps-5">
+      <div class="titleover">Linus Torvalds</div>
+    </div>
+    <table
+      class="c table bg-black border border-success text-success rounded align-items-center justify-content-center titleover50 mw-1">
+      <tbody>
+        <tr>
+          <td>Linux</td>
+          <td>210110</td>
+          <td>58712</td>
+        </tr>
+        <tr>
+          <td>Subsurface</td>
+          <td>2925</td>
+          <td>556</td>
+        </tr>
+        <tr>
+          <td>uemacs</td>
+          <td>1834</td>
+          <td>282</td>
+        </tr>
+        <tr>
+          <td>GuitarPedal</td>
+          <td>1428</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>libdc</td>
+          <td>108</td>
+          <td>100</td>
+        </tr>
+
+        <tr>
+          <td>1590A</td>
+          <td>513</td>
+          <td>18</td>
+        </tr>
+        </tr>
+
+        <tr>
+          <td>libgit2</td>
+          <td>309</td>
+          <td>22</td>
+        </tr>
+        </tr>
+
+        <tr>
+          <td>pesconvert</td>
+          <td>531</td>
+          <td>69</td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="d z-2 bg-black border border-success text-success rounded d-grid align-content-center justify-content-center"
+      id="carte"><i class="bi bi-radar"></i></div>
+    <div class="e bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <canvas class="zdog-canvas"></canvas>
+    </div>
+    <div class="f bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <div class="text-center">No README Available</div>
+      <i class="bi bi-ban text-center"></i>
+    </div>
+    <div class="q bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <i class="bi bi-bank titleover"> Linux Foundation</i>
+    </div>
+    <div class="r bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <div class="text-center titleover">Recent Contributions</div>
+      <i class="bi bi-bookmark-check-fill text-center"></i>
+    </div>
+    <div class="t bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <div class="d1 text-center">Languages<canvas id="chart3" class="m-3"></canvas></div>
+    </div>
+    <div class="y bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <div class="progressa titleover50"></div>
+    </div>
+    <div class="i bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <canvas id="chart2"></canvas>
+    </div>
+    <div class="o border border-success rounded d-flex align-items-center justify-content-center">
+      <div
+        class="balle bg-black border border-success text-success rounded d-grid align-items-center justify-content-center titleover"
+        id="balle"></div>
+    </div>
+    <div class="p bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <input type="text" placeholder="https://github.com/torvalds" class="bg-black border-black text-success">
+    </div>
+    <div
+      class="s text-center titleover bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      Status: None</div>
+    <div
+      class="g bg-black border border-success text-success rounded d-flex align-items-center justify-content-center flex-row">
+      <button class="me-4 buttonstart"><i class="bi bi-play-fill"></i></button>
+      <button class="ms-4 buttonstop"><i class="bi bi-stop-fill"></i></button>
+    </div>
+    <div
+      class="w bg-transparent border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <canvas class="z-2" id="chart1"></canvas>
+    </div>
+    <div
+      class="u z-2 bg-black border border-success text-success rounded d-grid align-items-center justify-content-center">
+      <select id="colorSelect" class="form-select bg-black text-success border-0 p-0 m-0"
+        style="height: 100%; width: 100%; font-size: 1rem;">
+        <option value="green" selected>Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+      </select>
+    </div>
+
+  </div>
 </body>
 
 </html>
